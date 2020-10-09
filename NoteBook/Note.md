@@ -32,5 +32,14 @@ vim RPM-GPG-KEY-CentOS-7-aarch64
 ```
 * 生成缓存
 ```bash
+yum clean dbcache
+yum clean metadata
+yum clean rpmdb
+yum clean headers
+yum clean all
+
+rm -rf /var/cache/yum/timedhosts.txt
+rm -rf /var/cache/yum/*
+
 yum makecache
 ```  
