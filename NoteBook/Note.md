@@ -11,22 +11,22 @@ mkdir yum-back
 ```bash
 mv CentOS-* yum-back/
 ```
-* yum替换源为阿里源
+* yum替换源为阿里源(文件在同目录下 ./Arm-CentOS7-Base 文件夹中)
 ```bash
 vim CentOS-Base.repo
 ```
-* 继续修改epel.repo： 
+* 继续修改epel.repo(文件在同目录下 ./Arm-CentOS7-Base 文件夹中)
 ```bash
 vim epel.repo
 ```
-* 替换认证秘钥
+* 替换认证秘钥(文件在同目录下 ./Arm-CentOS7-Base 文件夹中)
 ```bash
 cd /etc/pki/rpm-gpg/
 ```
 ```bash
 vim RPM-GPG-KEY-CentOS-7
 ```  
-* 继续修改RPM-GPG-KEY-CentOS-7-aarch64
+* 继续修改RPM-GPG-KEY-CentOS-7-aarch64(文件在同目录下 ./Arm-CentOS7-Base 文件夹中)
 ```bash
 vim RPM-GPG-KEY-CentOS-7-aarch64
 ```
