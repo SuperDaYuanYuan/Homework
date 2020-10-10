@@ -4,7 +4,7 @@
 ```bash
 cd /etc/yum.repos.d/
 ```
-* 备份原yum源  
+* 备份原yum源(或者都删除)
 ```bash
 mkdir yum-back
 ```
@@ -55,4 +55,3 @@ yum makecache
     cd /etc/pki/rpm-gpg
     wget https://archive.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
     ```
-
