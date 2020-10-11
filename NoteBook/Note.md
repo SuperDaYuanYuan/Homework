@@ -45,11 +45,11 @@ yum makecache
 ```
 
 * 若出现 `Couldn't open file /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7`  
-  - 在使用yum install的时候，偶尔会碰见这样的错误：   
+  - 在使用`yum install`的时候，偶尔会碰见这样的错误：   
     `Couldn’t open file /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7`
-  - /etc/yum.repos.d 目录下有关于yum repository的配置文件中列有如下的GPG key:   
+  - `/etc/yum.repos.d` 目录下有关于`yum repository`的配置文件中列有如下的`GPG key`:   
     `key=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7`
-  - 这会告诉YUM，这个repository的GPG key存在于磁盘上。而当YUM在路径 `/etc/pki/rpm-gpg` 下找不到这个 GPG key 的时候，就会报如上的错误了。
+  - 这会告诉YUM，这个repository的`GPG key`存在于磁盘上。而当YUM在路径 `/etc/pki/rpm-gpg` 下找不到这个 GPG key 的时候，就会报如上的错误了。
   - 解决方案：
     ```bash
     cd /etc/pki/rpm-gpg
